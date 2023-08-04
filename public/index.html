@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather and Air Quality</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+    <!-- Start Navber -->
+    <nav class="navbar">
+        <div class="container-fluid ">
+            <h1>Weather and Air Quality</h1>
+            <label class="switch">
+                <input type="checkbox" id="toggleSwitch">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </nav>
+    <!-- End Navber -->
+
+    <!-- Start Weathe and air Quality -->
+    <div class="container align-items-center" style="width: 18rem;">
+        <div class="weather-info">
+            <div class="weather-data" id="temperature">
+                <h2>Temperature</h2>
+                <p>Loading...</p>
+            </div>
+            <div class="weather-data" id="humidity">
+                <h2>Humidity</h2>
+                <p>Loading...</p>
+            </div>
+            <div class="weather-data" id="gas_resistance">
+                <h2>Air Quality</h2>
+                <p>Loading...</p>
+            </div>
+            <div class="weather-data" id="pressure">
+                <h2>Pressure</h2>
+                <p>Loading...</p>
+            </div>
+            <div class="weather-data" id="uv_intensity">
+                <h2>UV Index</h2>
+                <p>Loading...</p>
+            </div>
+            <div class="weather-data" id="altitude">
+                <h2>Sea Level</h2>
+                <p>Loading...</p>
+            </div>
+            <div class="weather-data" id="pm_1_0">
+                <h2>PM 1.0</h2>
+                <p>Loading...</p>
+            </div>
+            <div class="weather-data" id="pm_2_5">
+                <h2>PM 2.5</h2>
+                <p>Loading...</p>
+            </div>
+            <div class="weather-data" id="pm_10_0">
+                <h2>PM 10.0</h2>
+                <p>Loading...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Weathe and air Quality -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

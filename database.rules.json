@@ -1,0 +1,16 @@
+{
+	"rules": {
+		"users": {
+			".read": true,
+			".write": true
+		},
+		".read": false,
+		".write": false,
+		"UsersData": {
+			"$userId": {
+				".read": "($userId === auth.uid && auth.token.premium_account === true && auth.token.admin === true)",
+				".write": "($userId === auth.uid && auth.token.premium_account === true && auth.token.admin === true)"
+			}
+		}
+	}
+}
